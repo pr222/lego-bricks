@@ -18,6 +18,7 @@
  * @param {number} [x=2] - The horizontal number of knobs of the brick.
  * @param {number} [y=4] - The vertical number of knobs of the brick.
  * @param {string} [color='red'] - Color of the brick ('blue', 'red', 'green', etc.).
+ * @returns {object} - Returns the represented lego brick-object.
  */
 export function LegoBrick (x = 2, y = 4, color = 'red') {
   this.x = x
