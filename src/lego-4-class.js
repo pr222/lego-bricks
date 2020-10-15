@@ -17,17 +17,17 @@
  *
  */
 export class LegoBrick {
-  constructor (x, y, color) {
-    this.x = 2
-    this.y = 4
-    this.color = 'red'
+  constructor (x = 2, y = 4, color = 'red') {
+    this.x = x
+    this.y = y
+    this.color = color
   }
 
   toString () {
-    return `${this.x}, ${this.y}, ${this.color}`
+    return `${'® '.repeat(this.x).trim()}\n`.repeat(this.y).trim()
   }
 
   render () {
-    console.log(this.toString)
+    console.log(this.toString())
   }
 }
