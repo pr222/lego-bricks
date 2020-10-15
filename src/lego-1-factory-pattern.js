@@ -36,6 +36,18 @@
  * @param {string} [color='red'] - Color of the brick ('blue', 'red', 'green', etc.).
  * @returns {LegoBrick} obj - An object representing a lego brick.
  */
-export const createLegoBrick = function (x, y, color) {
-  // TODO: Write your code here.
+export const createLegoBrick = function (x = 2, y = 4, color = 'red') {
+  const legoBrick = {
+    x,
+    y,
+    color,
+    toString: function () {
+      return `${'® '.repeat(this.x).trim()}\n`.repeat(this.y).trim()
+    },
+    render: function () {
+      console.log(this.toString())
+    }
+  }
+
+  return legoBrick
 }

@@ -17,5 +17,17 @@
  *
  */
 export class LegoBrick {
-  // TODO: Write your code here.
+  constructor (x, y, color) {
+    this.x = 2
+    this.y = 4
+    this.color = 'red'
+  }
+
+  toString () {
+    return `${this.x}, ${this.y}, ${this.color}`
+  }
+
+  render () {
+    console.log(this.toString)
+  }
 }
